@@ -1,6 +1,8 @@
 package com.jaskaransahota.displaydate.controllers;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,7 +18,10 @@ public class HomecController {
 	@RequestMapping("/date")
 	public String getdate(Model model)
 	{
-		model.addAttribute("date", new java.util.Date());
+		Date date=new Date();
+		SimpleDateFormat formatter=new SimpleDateFormat("E, dd MMMM yyyy");
+		String mydate=formatter.format(date);
+		model.addAttribute("date", mydate);
 		return "date.jsp";
 	}
 	@RequestMapping("/time")
