@@ -46,4 +46,10 @@ public class BookService {
 	{
 		 bookrepo.deleteById(id); 
 	}
+	
+	public Books findone(Long id)
+	{
+		   return bookrepo.findById(id).orElse(null);
+	}
+	
 }
