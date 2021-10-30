@@ -5,11 +5,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+	rel="stylesheet" 
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+	crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
-<script src="/webjars/jquery/jquery.min.js"></script>
-<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
 </head>
 <body>
 	<h1>All Books</h1>
